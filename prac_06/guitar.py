@@ -1,5 +1,6 @@
 from datetime import date
 
+
 class Guitar:
     def __init__(self, name, year=0, cost=0):
         self.name = name
@@ -12,3 +13,6 @@ class Guitar:
     def get_age(self):
         current_year = date.today().year
         return current_year - self.year
+
+    def is_vintage(self):
+        return self.get_age() >= 50

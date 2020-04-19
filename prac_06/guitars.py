@@ -5,7 +5,9 @@ def main():
 
     guitar = Guitar("Gibson L-5 CES", 1922, 16035.45)
     print(guitar)
-    print(guitar.get_age())
+    print("The guitar is {} years old".format(guitar.get_age()))
+    print("Vintage : {}".format(guitar.is_vintage()))
+
 
 main()
 
