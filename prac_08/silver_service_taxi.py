@@ -13,3 +13,6 @@ class SilverServiceTaxi(Taxi):
         return "{}, {}km on current fare, ${:.2f}/km plus flagfall of {}".format(super().__str__(),
                                                                                  self.current_fare_distance,
                                                                                  self.price_per_km, self.flagfall)
+
+    def get_fare(self):
+        return self.price_per_km * self.current_fare_distance + self.flagfall
