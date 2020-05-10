@@ -7,7 +7,7 @@ class DynamicLabels(App):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.dynamic_names = {"Jack", "Frank", "Tom", "Bobby", "John"}
+        self.dynamic_names = {"Jack", "Frank", "Tom", "Bobby"}
 
     def build(self):
         self.title = "Dynamic Labels Exercise"
