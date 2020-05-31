@@ -14,5 +14,5 @@ number = int(input("Stars: "))
 print(number * "*")
 
 number = int(input("Stars: "))
-for i in range(1, number + 1):
+for i in range(2, number, 2):
     print("*" * i)
